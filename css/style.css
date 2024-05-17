@@ -1,0 +1,423 @@
+:root{
+    --main-color: #1C1C1C;
+    --secondary-color: #343434;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 45px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+p,a{
+    font-family: "Poppins", sans-serif;
+}
+h2{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    color: var(--secondary-color);
+    position: relative;
+}
+.heading::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.nav-logo{
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+}
+nav .navbar-nav li a{
+    font-size: 14px;
+}
+.navbar-shadow{
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+}
+#home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.social-links li{
+    background: rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+}
+h1 span::before{
+    content: "Larry Daniels";
+    animation: typing 9s infinite ease-in-out;
+}
+h1 span::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 90%;
+    border-left: 1px solid;
+    right: -10px;
+}
+@keyframes typing {
+    0% {content:'L';}
+    1% {content:'La';}
+    2% {content:'Lar';}
+    3% {content:'Larr';}
+    4% {content:'Larry';}
+    5% {content:'Larry ';}
+    6% {content:'Larry D';}
+    7% {content:'Larry Da';}
+    8% {content:'Larry Dan';}
+    9% {content:'Larry Dani';}
+    10% {content:'Larry Danie';}
+    11% {content:'Larry Daniel';}
+    12% {content:'Larry Daniels';}
+    21% {content:'Larry Daniels';}
+    22% {content:'Larry Daniel';}
+    23% {content:'Larry Danie';}
+    24% {content:'Larry Dani';}
+    25% {content:'Larry Dan';}
+    26% {content:'Larry Da';}
+    27% {content:'Larry D';}
+    28% {content:'Larry ';}
+    29% {content:'Larry';}
+    30% {content:'Larr';}
+    31% {content:'Lar';}
+    32% {content:'La';}
+    33% {content:'L';}
+    34% {content:'';}
+    35% {content:'D';}
+    36% {content:'De';}
+    37% {content:'Dev';}
+    38% {content:'Deve';}
+    39% {content:'Devel';}
+    40% {content:'Develo';}
+    41% {content:'Develop';}
+    42% {content:'Develope';}
+    43% {content:'Developer';}
+    58% {content:'Developer';}
+    59% {content:'Develope';}
+    60% {content:'Develop';}
+    61% {content:'Develo';}
+    62% {content:'Devel';}
+    63% {content:'Deve';}
+    64% {content:'Dev';}
+    65% {content:'De';}
+    66% {content:'D';}
+    67% {content:'';}
+    68% {content:'D';}
+    69% {content:'De';}
+    70% {content:'Des';}
+    71% {content:'Desi';}
+    72% {content:'Desig';}
+    73% {content:'Design';}
+    74% {content:'Designe';}
+    75% {content:'Designer';}
+    93% {content:'Designer';}
+    94% {content:'Designe';}
+    95% {content:'Design';}
+    96% {content:'Desig';}
+    97% {content:'Desi';}
+    98% {content:'Des';}
+    99% {content:'De';}
+    100% {content:'';}
+}
+.bg-grey{
+    background-color: #F7F7F7;
+    position: relative;
+    z-index: 1;
+}
+#about h3,
+.counter h3{
+    font-size: 30px;
+    line-height: 33px;
+    color: var(--secondary-color);
+}
+#about h3{
+    font-weight: 800;
+}
+.counter h3{
+    font-weight: 900;
+}
+#about .info .description{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #999;
+}
+.progress-style{
+    height: 1.5rem;
+    background-color: #F7F7F7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+.bar-color{
+    background-color: var(--main-color);
+}
+#about h6{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14px;
+}
+#about figure::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-image: url(../images/dots.png);
+    left: -30px;
+    bottom: -30px;
+    z-index: -1;
+}
+@media screen and (max-width: 991px) {
+    #about figure{
+        width: 75%;
+        margin: auto;
+    }
+}
+.card-shadow{
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+.card-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #748182;
+}
+.icon-style{
+    background-color: #F7F7F7;
+    border-radius: 50%;
+}
+#services h3{
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 20px;
+    color: var(--secondary-color);
+}
+#services .card i,
+#contact .details i{
+    transition: all 0.5s;
+}
+#services .card:hover i,
+#contact .section:hover i{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.navs-links{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    line-height: 23px;
+    color: #222;
+}
+#work .nav-item button.active{
+    background-color: unset;
+    color: #222;
+    border-bottom: 2px solid;
+    border-radius: 0;
+}
+#work .nav-item button:hover{
+    color: #222;
+}
+.img-overlay{
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    inset: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: scale(0.95);
+}
+.box:hover .img-overlay{
+    opacity: 1;
+    transform: scale(1);
+}
+.overlay-content h6{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+}
+.overlay-content .icons li a{
+    display: block;
+    background-color: black;
+    color: #eee;
+    line-height: 28px;
+    font-size: 0.8rem;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.overlay-content .icons li a:hover{
+    background-color: white;
+    color: black;
+}
+.carousel-indicators .carousel-button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+    margin-left: 10px;
+}
+.carousel-indicators .carousel-button:hover:not(.active){
+    background-color: var(--secondary-color);
+}
+.w-img{
+    width: 100px;
+}
+.paragraph{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #748182;
+    word-spacing: 2px;
+}
+#clients .content p.paragraph{
+    width: 90%;
+    margin: auto;
+}
+#clients .content h6{
+    font-weight: 600;
+    line-height: 18px;
+    color: #343434;
+}
+#clients .content :last-child{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #888;
+}
+.counter i{
+    color: var(--secondary-color);
+}
+.bg-card{
+    background-color: #5B5B5B;
+}
+#team .card h3{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 28px;
+}
+#team .card h5{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+}
+#team .card figure:hover img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#team .card figure img{
+    transition: all 0.5s;
+}
+#team .card:hover .links{
+    cursor: pointer;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);
+}
+#team figure .links{
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    inset: 5px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5);
+}
+#team figure .links ul li a{
+    display: block;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+#team figure .links ul li a:hover{
+    background-color: white;
+    color: black;
+}
+#contact h6{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: var(--secondary-color);
+}
+.bg-form{
+    background-color: #F4F4F4;
+}
+.form-control:focus{
+    background-color: #F4F4F4;
+    box-shadow: unset;
+    border-color: unset;
+}
+textarea{
+    height: 160px;
+    max-height: 160px;
+}
+input::placeholder,
+textarea::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 20px;
+    color: var(--secondary-color);
+}
+.button-style{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 19px;
+    transition: all 0.5s;
+    padding: 10px 40px;
+}
+.dark-button{
+    background-color: var(--main-color);
+    color: white;
+}
+.light-button{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.dark-button:hover{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.light-button:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+@media screen and (max-width: 575px) {
+    .form .row :first-child{
+        margin-bottom: 16px;
+    }
+}
+.bg-footer{
+    background-color: var(--main-color);
+}
+footer p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #748182;
+    word-spacing: 2px;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .container{
+        margin: 0;
+        max-width: 100%;
+    }
+}
